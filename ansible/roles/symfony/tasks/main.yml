@@ -48,5 +48,5 @@
 - name:  Reload fixtures
   shell:
     cd /var/www/{{ symfony_src_dir }}
-    && php app/console doctrine:fixtures:load
+    && php app/console doctrine:fixtures:load -n
   ignore_errors: true
